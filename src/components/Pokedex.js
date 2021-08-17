@@ -7,9 +7,19 @@ export default class Pokedex extends Component {
     super(props);
     
     this.state = {
+      loading: true,
       allPoke: [],
       counter: 0,
       pokeInfo: [],
+    }
+  }
+
+  loadingState = () => {
+    const { loading } = this.state;
+    if (loading) {
+      this.setState(() => ({ loading: false }));
+    } else {
+      this.setState(() => ({ loading: true }));
     }
   }
   
@@ -28,16 +38,12 @@ export default class Pokedex extends Component {
     return pokemon;
   }
 
-  listPoke = () => {
+  listPoke = async () => {
     const { allPoke } = this.state;
-    this.setState({ pokeInfo: [] })
-    allPoke.forEach( (poke) => {
-      this.allFetchPoke(poke.url).then((data) => {
-        this.setState((prevState) => ({
-          pokeInfo: [...prevState.pokeInfo, data],
-        }))
-      });
-    });
+    this.setState({ pokeInfo: [], loading: true })
+    const allPromises = allPoke.map( (poke) => this.allFetchPoke(poke.url));
+    const allResolvedPromises = await Promise.all(allPromises);
+    this.setState(() => ({ pokeInfo: allResolvedPromises, loading: false }));
   }
 
   addCounter = () => {
@@ -65,13 +71,15 @@ export default class Pokedex extends Component {
   }
 
   render() {
-    const { pokeInfo } = this.state;
+    const { pokeInfo, loading } = this.state;
     const pokedex = pokeInfo.map((info) => <Pokecard key={info.id} pokeInfo={info} />)
+    const load = <img src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="Loading..." />
+    // const load = <img src="../img/loading.gif" alt="Loading..." />
+
     return (
       <div className="pokedex_container" data-testid="pokedex-exist">
         <h1>Pokedex</h1>
-        {/* <button onClick={ this.addCounter }>Next Page</button>  */}
-        <div className="pokedex">{pokedex}</div>
+        {loading ? load : <div className="pokedex">{pokedex}</div>}
         <button onClick={ this.addCounter }>Next Page</button> 
       </div>
     )

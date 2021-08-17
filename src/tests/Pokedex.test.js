@@ -1,6 +1,5 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitForElementToBeRemoved } from '@testing-library/react';
 import App from '../App';
-import Pokedex from '../components/Pokedex';
 
 describe('Testing Pokedex component and his essencials funcionalities', () => {
   it('should render \'Pokedex\' component after clicking ' +
@@ -14,20 +13,35 @@ describe('Testing Pokedex component and his essencials funcionalities', () => {
     expect(pokeComponent).toBeInTheDocument();
   });
 
-  it('should render 9 cards after render \'Pokedex\' component', async () => {
-    // render(<Pokedex />);
+  it('should have one card with the text \'bulbasaur\'', async () => {
     render(<App />);
 
     const pokeLink = screen.getByTestId('pokedex-link');
     fireEvent.click(pokeLink);
+    
+    await waitForElementToBeRemoved(() => screen.getByAltText('Loading...'), { timeout: 3000 });
+    const bulbasaurTitle = screen.getByRole('heading', { name: /bulbasaur/i })
 
-    const allPokeCards = await screen.findAllByTestId('pokemon-card-exist', { options: { timeout: 9000 } });
-
-    expect(allPokeCards.lenght).toEqual(9);
+    expect(bulbasaurTitle).toBeInTheDocument();
   });
 
-  it('should have one card with the text \'bulbasaur\'', async () => {
+  it('should render 9 cards after render \'Pokedex\' component',async () => {
     render(<App />);
 
+    const pokeLink = screen.getByTestId('pokedex-link');
+    fireEvent.click(pokeLink);
+    
+    await waitForElementToBeRemoved(() => screen.getByAltText('Loading...'), { timeout: 3000 });
+    const allPokeCards = screen.getAllByTestId('pokemon-card-exist')
+
+    expect(allPokeCards[0]).toBeInTheDocument();
+    expect(allPokeCards[1]).toBeInTheDocument();
+    expect(allPokeCards[2]).toBeInTheDocument();
+    expect(allPokeCards[3]).toBeInTheDocument();
+    expect(allPokeCards[4]).toBeInTheDocument();
+    expect(allPokeCards[5]).toBeInTheDocument();
+    expect(allPokeCards[6]).toBeInTheDocument();
+    expect(allPokeCards[7]).toBeInTheDocument();
+    expect(allPokeCards[8]).toBeInTheDocument();
   });
 });
