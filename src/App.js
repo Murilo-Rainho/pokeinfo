@@ -15,8 +15,8 @@ class App extends Component {
         <Header />
         <Home />
         <Switch>
-          <Route path="/pokedex" component={ Pokedex } />
-          <Route path="/pokemon" render={() => <Pokemon />} />
+          <Route path="/pokeinfo/pokedex" component={ Pokedex } />
+          <Route path="/pokeinfo/pokemon" render={() => <Pokemon />} />
         </Switch>
         <Footer />
       </BrowserRouter>

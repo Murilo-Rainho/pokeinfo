@@ -38,12 +38,13 @@ export default class Pokedex extends Component {
     return pokemon;
   }
 
-  listPoke = async () => {
+  listPoke = () => {
     const { allPoke } = this.state;
-    this.setState({ pokeInfo: [], loading: true })
-    const allPromises = allPoke.map( (poke) => this.allFetchPoke(poke.url));
-    const allResolvedPromises = await Promise.all(allPromises);
-    this.setState(() => ({ pokeInfo: allResolvedPromises, loading: false }));
+    this.setState({ pokeInfo: [], loading: true }, async () => {
+      const allPromises = allPoke.map( (poke) => this.allFetchPoke(poke.url));
+      const allResolvedPromises = await Promise.all(allPromises);
+      this.setState(() => ({ pokeInfo: allResolvedPromises, loading: false }));
+    });
   }
 
   addCounter = () => {
@@ -64,10 +65,6 @@ export default class Pokedex extends Component {
 
   componentDidMount() {
     this.orderFetch();
-  }
-
-  componentDidUpdate() {
-    // this.orderFetch();
   }
 
   render() {

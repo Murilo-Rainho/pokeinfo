@@ -7,8 +7,8 @@ export default class Header extends Component {
       <div data-testid="header-exist" className="header">
         <h1 className="header-title">POKEMÓNS</h1>
         <section className="section-links">
-          <Link data-testid="pokedex-link" className="link" to="/pokedex">Pokédex</Link>
-          <Link data-testid="pokemon-link" className="link" to="/pokemon">Pokémon</Link>
+          <Link data-testid="pokedex-link" className="link" to="/pokeinfo/pokedex">Pokédex</Link>
+          <Link data-testid="pokemon-link" className="link" to="/pokeinfo/pokemon">Pokémon</Link>
         </section>
       </div>
     )
