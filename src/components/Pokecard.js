@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import '../styles/pokecard.css'
+
 export default class Pokecard extends Component {
   constructor(props) {
     super(props);
