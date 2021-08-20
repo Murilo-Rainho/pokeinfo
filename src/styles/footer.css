@@ -1,0 +1,7 @@
+footer {
+  border-radius: 5px 5px 0 0 ;
+  display: flex;
+  justify-content: center;
+  background-color: #d32b2b;
+  margin-top: 1vh;
+}
