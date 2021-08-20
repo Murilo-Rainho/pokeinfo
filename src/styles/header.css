@@ -1,0 +1,35 @@
+.nav-links {
+  background-color: #a80000;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  height: 7vh;
+  padding: 1vh 0;
+  justify-content: space-around;
+}
+
+.link {
+  align-items: center;
+  background-color: #0c1821;
+  border-radius: 10px;
+  color: aliceblue;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: 10%;
+}
+
+.link:hover {
+  background: #0c1821 url(../img/pokeball.gif) repeat center;
+  background-size: 20px;
+}
+
+.link.pokemon-logo:hover {
+  background-color: #333333
+}
+
+.link.pokemon-logo {
+  background: #0c1821 url(../img/pokemon-logo-pixel.png) no-repeat center;
+  background-size: 15vh;
+}

@@ -1,0 +1,34 @@
+.main-home {
+  background-color: inherit ;
+  background-size: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  margin-top: 5vh;
+  position: relative;
+}
+
+.professor-img {
+  height: 50vh;
+}
+
+.pokemon-top-gif {
+  position: absolute;
+  top: 5vh;
+  width: 10vw;
+}
+
+.pokemon-bottom-gif {
+  position: absolute;
+  top: 30vh;
+  width: 10vw;
+}
+
+.welcome-text {
+  color: #FFFFFF;
+  font-size: 1.3em;
+  text-align: center;
+}

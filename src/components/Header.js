@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import '../styles/header.css'
+
 export default class Header extends Component {
   render() {
     return (
-      <div data-testid="header-exist" className="header">
-        <h1 className="header-title">POKEMÓNS</h1>
-        <section className="section-links">
-          <Link data-testid="pokedex-link" className="link" to="/pokeinfo/pokedex">Pokédex</Link>
-          <Link data-testid="pokemon-link" className="link" to="/pokeinfo/pokemon">Pokémon</Link>
-        </section>
-      </div>
+        <nav className="nav-links">
+          <Link data-testid="pokedex-link" className="link" to="/pokedex">Pokédex</Link>
+          <Link to='/' className="link pokemon-logo"></Link>
+          <Link data-testid="pokemon-link" className="link" to="/pokemon">Search</Link>
+        </nav>
     )
   }
 }
