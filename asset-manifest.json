@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/pokeinfo/static/css/main.607cf4ca.chunk.css",
-    "main.js": "/pokeinfo/static/js/main.8d7c6324.chunk.js",
-    "main.js.map": "/pokeinfo/static/js/main.8d7c6324.chunk.js.map",
-    "runtime-main.js": "/pokeinfo/static/js/runtime-main.1f84afdf.js",
-    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.1f84afdf.js.map",
-    "static/js/2.349952ee.chunk.js": "/pokeinfo/static/js/2.349952ee.chunk.js",
-    "static/js/2.349952ee.chunk.js.map": "/pokeinfo/static/js/2.349952ee.chunk.js.map",
-    "static/js/3.93daf92d.chunk.js": "/pokeinfo/static/js/3.93daf92d.chunk.js",
-    "static/js/3.93daf92d.chunk.js.map": "/pokeinfo/static/js/3.93daf92d.chunk.js.map",
+    "main.css": "/pokeinfo/static/css/main.b2fc4ab9.chunk.css",
+    "main.js": "/pokeinfo/static/js/main.524032d7.chunk.js",
+    "main.js.map": "/pokeinfo/static/js/main.524032d7.chunk.js.map",
+    "runtime-main.js": "/pokeinfo/static/js/runtime-main.d3b4f066.js",
+    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.d3b4f066.js.map",
+    "static/js/2.971fed06.chunk.js": "/pokeinfo/static/js/2.971fed06.chunk.js",
+    "static/js/2.971fed06.chunk.js.map": "/pokeinfo/static/js/2.971fed06.chunk.js.map",
+    "static/js/3.88f7f10a.chunk.js": "/pokeinfo/static/js/3.88f7f10a.chunk.js",
+    "static/js/3.88f7f10a.chunk.js.map": "/pokeinfo/static/js/3.88f7f10a.chunk.js.map",
     "index.html": "/pokeinfo/index.html",
-    "static/css/main.607cf4ca.chunk.css.map": "/pokeinfo/static/css/main.607cf4ca.chunk.css.map",
-    "static/js/2.349952ee.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.349952ee.chunk.js.LICENSE.txt"
+    "static/css/main.b2fc4ab9.chunk.css.map": "/pokeinfo/static/css/main.b2fc4ab9.chunk.css.map",
+    "static/js/2.971fed06.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.971fed06.chunk.js.LICENSE.txt",
+    "static/media/pokedex.css": "/pokeinfo/static/media/loading.176efa05.gif",
+    "static/media/header.css": "/pokeinfo/static/media/pokemon-logo-pixel.032090d5.png",
+    "static/media/professor-oak.94d987ef.png": "/pokeinfo/static/media/professor-oak.94d987ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f84afdf.js",
-    "static/js/2.349952ee.chunk.js",
-    "static/css/main.607cf4ca.chunk.css",
-    "static/js/main.8d7c6324.chunk.js"
+    "static/js/runtime-main.d3b4f066.js",
+    "static/js/2.971fed06.chunk.js",
+    "static/css/main.b2fc4ab9.chunk.css",
+    "static/js/main.524032d7.chunk.js"
   ]
 }
