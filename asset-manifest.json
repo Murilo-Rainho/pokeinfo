@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/pokeinfo/static/css/main.ac82d96c.chunk.css",
-    "main.js": "/pokeinfo/static/js/main.a426f2aa.chunk.js",
-    "main.js.map": "/pokeinfo/static/js/main.a426f2aa.chunk.js.map",
-    "runtime-main.js": "/pokeinfo/static/js/runtime-main.d3b4f066.js",
-    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.d3b4f066.js.map",
+    "main.css": "/pokeinfo/static/css/main.fbade4ff.chunk.css",
+    "main.js": "/pokeinfo/static/js/main.1cc6f5f8.chunk.js",
+    "main.js.map": "/pokeinfo/static/js/main.1cc6f5f8.chunk.js.map",
+    "runtime-main.js": "/pokeinfo/static/js/runtime-main.dc6aaa1c.js",
+    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.dc6aaa1c.js.map",
     "static/js/2.971fed06.chunk.js": "/pokeinfo/static/js/2.971fed06.chunk.js",
     "static/js/2.971fed06.chunk.js.map": "/pokeinfo/static/js/2.971fed06.chunk.js.map",
-    "static/js/3.88f7f10a.chunk.js": "/pokeinfo/static/js/3.88f7f10a.chunk.js",
-    "static/js/3.88f7f10a.chunk.js.map": "/pokeinfo/static/js/3.88f7f10a.chunk.js.map",
+    "static/js/3.fcc59419.chunk.js": "/pokeinfo/static/js/3.fcc59419.chunk.js",
+    "static/js/3.fcc59419.chunk.js.map": "/pokeinfo/static/js/3.fcc59419.chunk.js.map",
     "index.html": "/pokeinfo/index.html",
-    "static/css/main.ac82d96c.chunk.css.map": "/pokeinfo/static/css/main.ac82d96c.chunk.css.map",
+    "static/css/main.fbade4ff.chunk.css.map": "/pokeinfo/static/css/main.fbade4ff.chunk.css.map",
     "static/js/2.971fed06.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.971fed06.chunk.js.LICENSE.txt",
+    "static/media/charmander_sad.c9b440c5.gif": "/pokeinfo/static/media/charmander_sad.c9b440c5.gif",
     "static/media/pokedex.css": "/pokeinfo/static/media/loading.176efa05.gif",
     "static/media/pc_next_sound.33b35d8a.mp3": "/pokeinfo/static/media/pc_next_sound.33b35d8a.mp3",
     "static/media/pc_select_sound.168abf83.mp3": "/pokeinfo/static/media/pc_select_sound.168abf83.mp3",
@@ -19,9 +20,9 @@
     "static/media/professor-oak.94d987ef.png": "/pokeinfo/static/media/professor-oak.94d987ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3b4f066.js",
+    "static/js/runtime-main.dc6aaa1c.js",
     "static/js/2.971fed06.chunk.js",
-    "static/css/main.ac82d96c.chunk.css",
-    "static/js/main.a426f2aa.chunk.js"
+    "static/css/main.fbade4ff.chunk.css",
+    "static/js/main.1cc6f5f8.chunk.js"
   ]
 }
