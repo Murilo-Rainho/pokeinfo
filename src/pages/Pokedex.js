@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Pokecard from '../components/Pokecard';
 import loadingSpinner from '../img/loading.gif';
+import pcNext from '../sound_fx/pc_next_sound.mp3'
 import '../styles/pokedex.css'
 
 export default class Pokedex extends Component {
@@ -18,6 +19,7 @@ export default class Pokedex extends Component {
         nextButton: false,
       }
     }
+    this.pcNext = new Audio(pcNext)
   }
   
   pokeCardInfo = async (url, state) => {
@@ -57,6 +59,7 @@ export default class Pokedex extends Component {
           await this.pokeCardInfo(`https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${counter}`, 'allRequests');
           counter >= lastPage && this.setState({ counter: -10 })
           this.pokemonList();
+          this.pcNext.play()
     });
   }
 

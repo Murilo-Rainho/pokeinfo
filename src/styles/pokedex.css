@@ -26,11 +26,16 @@
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
+  min-height: 40px;
   padding: 10px 20px;
   width: 150px;
 }
 
-.button-panel .previous-button:hover {
+.previous-button:disabled {
+  display: none;
+}
+
+.previous-button:hover {
   background: #a80000 url(../img/loading.gif) repeat center;
   background-size: 45px;
   font-size: 0;
