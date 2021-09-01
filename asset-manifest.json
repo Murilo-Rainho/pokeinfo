@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pokeinfo/static/css/main.88655359.chunk.css",
-    "main.js": "/pokeinfo/static/js/main.524032d7.chunk.js",
-    "main.js.map": "/pokeinfo/static/js/main.524032d7.chunk.js.map",
+    "main.css": "/pokeinfo/static/css/main.c3542a30.chunk.css",
+    "main.js": "/pokeinfo/static/js/main.439ab524.chunk.js",
+    "main.js.map": "/pokeinfo/static/js/main.439ab524.chunk.js.map",
     "runtime-main.js": "/pokeinfo/static/js/runtime-main.d3b4f066.js",
     "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.d3b4f066.js.map",
     "static/js/2.971fed06.chunk.js": "/pokeinfo/static/js/2.971fed06.chunk.js",
@@ -10,16 +10,18 @@
     "static/js/3.88f7f10a.chunk.js": "/pokeinfo/static/js/3.88f7f10a.chunk.js",
     "static/js/3.88f7f10a.chunk.js.map": "/pokeinfo/static/js/3.88f7f10a.chunk.js.map",
     "index.html": "/pokeinfo/index.html",
-    "static/css/main.88655359.chunk.css.map": "/pokeinfo/static/css/main.88655359.chunk.css.map",
+    "static/css/main.c3542a30.chunk.css.map": "/pokeinfo/static/css/main.c3542a30.chunk.css.map",
     "static/js/2.971fed06.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.971fed06.chunk.js.LICENSE.txt",
     "static/media/pokedex.css": "/pokeinfo/static/media/loading.176efa05.gif",
+    "static/media/pc_next_sound.33b35d8a.mp3": "/pokeinfo/static/media/pc_next_sound.33b35d8a.mp3",
+    "static/media/pc_select_sound.168abf83.mp3": "/pokeinfo/static/media/pc_select_sound.168abf83.mp3",
     "static/media/header.css": "/pokeinfo/static/media/pokemon-logo-pixel.032090d5.png",
     "static/media/professor-oak.94d987ef.png": "/pokeinfo/static/media/professor-oak.94d987ef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d3b4f066.js",
     "static/js/2.971fed06.chunk.js",
-    "static/css/main.88655359.chunk.css",
-    "static/js/main.524032d7.chunk.js"
+    "static/css/main.c3542a30.chunk.css",
+    "static/js/main.439ab524.chunk.js"
   ]
 }
