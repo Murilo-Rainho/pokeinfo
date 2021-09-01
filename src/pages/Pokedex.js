@@ -47,14 +47,14 @@ export default class Pokedex extends Component {
   changePage = ({target: { name }}) => {
     const lastPage = 1110;
     this.setState(({ counter }) => {
-      if (name === 'previous' ) return {counter: counter - 10}
-      if (name === 'next') return {counter: counter + 10}
+      if (name === 'previous' ) return {counter: counter - 9}
+      if (name === 'next') return {counter: counter + 9}
     }, async () => {
       const { counter } = this.state;
       counter > 0 ? this
         .setState({ buttonStatus: { prevButton: false } }) : this
           .setState({ buttonStatus: { prevButton: true } })
-          await this.pokeCardInfo(`https://pokeapi.co/api/v2/pokemon/?limit=10&offset=${counter}`, 'allRequests');
+          await this.pokeCardInfo(`https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${counter}`, 'allRequests');
           counter >= lastPage && this.setState({ counter: -10 })
           this.pokemonList();
     });
@@ -62,7 +62,7 @@ export default class Pokedex extends Component {
 
   renderFirstPage = async () => {
     const { counter } = this.state;
-    await this.pokeCardInfo(`https://pokeapi.co/api/v2/pokemon/?limit=10&offset=${counter}`, 'allRequests');
+    await this.pokeCardInfo(`https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${counter}`, 'allRequests');
     this.pokemonList();
   }
 

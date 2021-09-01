@@ -6,7 +6,7 @@ import '../styles/pokecard.css'
 export default class Pokecard extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       typeOneColor: '',
       typeTwoColor: 'none',
@@ -47,13 +47,15 @@ export default class Pokecard extends Component {
 
   fixPokedexId = (id) => {
     if (id < 10) return `00${id}`
-    if (id >= 10 && id < 100 ) return `0${id}`
-    if (id >= 100 ) return id
+    if (id >= 10 && id < 100) return `0${id}`
+    if (id >= 100) return id
   }
-  
+
   render() {
     const { typeOneColor, typeTwoColor } = this.state;
     const { pokeInfo: {
+      stats,
+      moves,
       abilities,
       id,
       name,
@@ -63,26 +65,49 @@ export default class Pokecard extends Component {
     return (
       <div className="poke-card" data-testid="pokemon-card-exist">
         <img className='background' src={pokeballBackground} alt='pokeball' />
-        <img className='pokemon-sprite' src={ front_default } alt={ name } />
-        <section className='info-container flip-card-front'>
-          <div>
-            <span>Nº: </span>
-            <span>{this.fixPokedexId(id)}</span>
+        <img className='pokemon-sprite' src={front_default} alt={name} />
+        <div className='flip-card'>
+          <div className='flip-card-inner'>
+            <section className='info-container flip-card-front'>
+              <div>
+                <span>Nº: </span>
+                <span>{this.fixPokedexId(id)}</span>
+              </div>
+              <div>
+                <span>NAME: </span>
+                <span>{name.toUpperCase()}</span>
+              </div>
+              <div>
+                <span>TYPE: </span>
+                <span className='pokemon-type' style={{ backgroundColor: typeOneColor }}>{types[0].type.name.toUpperCase()}</span>
+                <span className='pokemon-type' style={{ backgroundColor: typeTwoColor }}>{types.length > 1 && types[1].type.name.toUpperCase()}</span>
+              </div>
+              <div>
+                <span>ABILITY: </span>
+                <span>{abilities[0].ability.name.toUpperCase()}</span>
+              </div>
+            </section>
+            <section className='flip-card-back'>
+              <div className='pokemon-stats'>
+                <p>STATS</p>
+                <span>{`${stats[0].stat.name.toUpperCase()}-${stats[0].base_stat}`}</span>
+                <span>{`${stats[1].stat.name.toUpperCase()}-${stats[1].base_stat}`}</span>
+                <span>{`${stats[2].stat.name.toUpperCase()}-${stats[2].base_stat}`}</span>
+              </div>
+              <div className='pokemon-moves'>
+                <p>MOVES</p>
+                <div className='pokemon-moves-container'>
+                  <span className='pokemon-moves-name'>{moves[0].move.name}</span>
+                  <span>{moves.length > 1 && moves[1].move.name}</span>
+                </div>
+                <div className='pokemon-moves-container'>
+                  <span>{moves.length > 2 && moves[2].move.name}</span>
+                  <span>{moves.length > 3 && moves[3].move.name}</span>
+                </div>
+              </div>
+            </section>
           </div>
-          <div>
-            <span>NAME: </span>
-            <span>{name.toUpperCase()}</span>
-          </div>
-          <div>
-            <span>TYPE: </span>
-            <span className='pokemon-type' style={{backgroundColor: typeOneColor}}>{types[0].type.name.toUpperCase()}</span>
-            <span className='pokemon-type' style={{backgroundColor: typeTwoColor}}>{types.length > 1 && types[1].type.name.toUpperCase()}</span>
-          </div>
-          <div>
-            <span>ABILITY: </span>
-            <span>{abilities[0].ability.name.toUpperCase()}</span>
-          </div>
-        </section>
+        </div>
       </div>
     )
   }

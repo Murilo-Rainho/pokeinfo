@@ -32,4 +32,5 @@
 .link.pokemon-logo {
   background: #0c1821 url(../img/pokemon-logo-pixel.png) no-repeat center;
   background-size: 15vh;
+  min-width: 110px;
 }
