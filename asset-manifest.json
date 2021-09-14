@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/pokeinfo/static/css/main.fbade4ff.chunk.css",
-    "main.js": "/pokeinfo/static/js/main.1cc6f5f8.chunk.js",
-    "main.js.map": "/pokeinfo/static/js/main.1cc6f5f8.chunk.js.map",
-    "runtime-main.js": "/pokeinfo/static/js/runtime-main.dc6aaa1c.js",
-    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.dc6aaa1c.js.map",
-    "static/js/2.971fed06.chunk.js": "/pokeinfo/static/js/2.971fed06.chunk.js",
-    "static/js/2.971fed06.chunk.js.map": "/pokeinfo/static/js/2.971fed06.chunk.js.map",
-    "static/js/3.fcc59419.chunk.js": "/pokeinfo/static/js/3.fcc59419.chunk.js",
-    "static/js/3.fcc59419.chunk.js.map": "/pokeinfo/static/js/3.fcc59419.chunk.js.map",
+    "main.css": "/pokeinfo/static/css/main.98d7bb74.chunk.css",
+    "main.js": "/pokeinfo/static/js/main.903a8da3.chunk.js",
+    "main.js.map": "/pokeinfo/static/js/main.903a8da3.chunk.js.map",
+    "runtime-main.js": "/pokeinfo/static/js/runtime-main.2c0303b4.js",
+    "runtime-main.js.map": "/pokeinfo/static/js/runtime-main.2c0303b4.js.map",
+    "static/js/2.356238bd.chunk.js": "/pokeinfo/static/js/2.356238bd.chunk.js",
+    "static/js/2.356238bd.chunk.js.map": "/pokeinfo/static/js/2.356238bd.chunk.js.map",
+    "static/js/3.a1fb60b1.chunk.js": "/pokeinfo/static/js/3.a1fb60b1.chunk.js",
+    "static/js/3.a1fb60b1.chunk.js.map": "/pokeinfo/static/js/3.a1fb60b1.chunk.js.map",
     "index.html": "/pokeinfo/index.html",
-    "static/css/main.fbade4ff.chunk.css.map": "/pokeinfo/static/css/main.fbade4ff.chunk.css.map",
-    "static/js/2.971fed06.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.971fed06.chunk.js.LICENSE.txt",
+    "static/css/main.98d7bb74.chunk.css.map": "/pokeinfo/static/css/main.98d7bb74.chunk.css.map",
+    "static/js/2.356238bd.chunk.js.LICENSE.txt": "/pokeinfo/static/js/2.356238bd.chunk.js.LICENSE.txt",
     "static/media/charmander_sad.c9b440c5.gif": "/pokeinfo/static/media/charmander_sad.c9b440c5.gif",
     "static/media/pokedex.css": "/pokeinfo/static/media/loading.176efa05.gif",
+    "static/media/logo_whatsapp.9aa2a760.png": "/pokeinfo/static/media/logo_whatsapp.9aa2a760.png",
     "static/media/pc_next_sound.33b35d8a.mp3": "/pokeinfo/static/media/pc_next_sound.33b35d8a.mp3",
     "static/media/pc_select_sound.168abf83.mp3": "/pokeinfo/static/media/pc_select_sound.168abf83.mp3",
     "static/media/header.css": "/pokeinfo/static/media/pokemon-logo-pixel.032090d5.png",
+    "static/media/pokemon_found.bcc21503.mp3": "/pokeinfo/static/media/pokemon_found.bcc21503.mp3",
     "static/media/professor-oak.94d987ef.png": "/pokeinfo/static/media/professor-oak.94d987ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc6aaa1c.js",
-    "static/js/2.971fed06.chunk.js",
-    "static/css/main.fbade4ff.chunk.css",
-    "static/js/main.1cc6f5f8.chunk.js"
+    "static/js/runtime-main.2c0303b4.js",
+    "static/js/2.356238bd.chunk.js",
+    "static/css/main.98d7bb74.chunk.css",
+    "static/js/main.903a8da3.chunk.js"
   ]
 }
