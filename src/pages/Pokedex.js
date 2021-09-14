@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Pokecard from '../components/Pokecard';
-import loadingSpinner from '../img/loading.gif';
+import { load } from '../helpers/consts';
 import pcNext from '../sound_fx/pc_next_sound.mp3'
 import '../styles/pokedex.css'
 
@@ -76,7 +76,6 @@ export default class Pokedex extends Component {
   render() {
     const { pokeInfo, loading, buttonStatus: { prevButton, nextButton } } = this.state;
     const pokedex = pokeInfo.map((info) => <Pokecard key={info.id} pokeInfo={info} />)
-    const load = <img src={loadingSpinner} alt="Loading..." />
 
     return (
       <main className="pokedex-container" data-testid="pokedex-exist">

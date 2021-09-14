@@ -18,7 +18,7 @@ export default class Header extends Component {
         <nav className="nav-links">
           <Link onClick={this.playSound} data-testid="pokedex-link" className="link" to="/pokedex">Pokédex</Link>
           <Link onClick={this.playSound} to='/' className="link pokemon-logo"></Link>
-          <Link onClick={this.playSound} data-testid="pokemon-link" className="link" to="/pokemon">Search</Link>
+          <Link onClick={this.playSound} data-testid="pokemon-link" className="link" to="/search">Search</Link>
         </nav>
     )
   }

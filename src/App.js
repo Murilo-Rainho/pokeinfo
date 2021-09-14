@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Pokedex from './pages/Pokedex';
-import Pokemon from './pages/Pokemon';
+import Search from './pages/Search';
 import NoMatch from './pages/NoMatch';
 
 class App extends Component {
@@ -15,10 +15,10 @@ class App extends Component {
       <BrowserRouter basename='/pokeinfo'>
         <Header />
         <Switch>
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/' component={ Home }/>
           <Route path="/pokedex" component={ Pokedex } />
-          <Route path="/pokemon" render={() => <Pokemon />} />
-          <Route path="*" render={() => <NoMatch />} />
+          <Route path="/search" component={ Search } />
+          <Route path="*" component={ NoMatch } />
         </Switch>
         <Footer />
       </BrowserRouter>

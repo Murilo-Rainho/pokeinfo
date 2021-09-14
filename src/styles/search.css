@@ -1,0 +1,49 @@
+.search-main {
+  align-items: center;
+  color: inherit;
+  display: flex;
+}
+
+.search-section {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 10px 0;
+  width: 80vw;
+}
+
+.search-main .search-input {
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  min-width: 150px;
+  outline: none;
+  padding: 10px;
+  width: 20vw;
+}
+
+.search-main .search-btn {
+  background-color: #a80000;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 10px;
+  min-height: 40px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  width: 150px;
+}
+
+.search-main .search-btn:hover {
+  background-color: #801111;
+}
+
+.search-main .poke-card {
+  min-width: 350px;
+  min-height: 250px;
+}

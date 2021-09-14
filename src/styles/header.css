@@ -17,6 +17,7 @@
   justify-content: center;
   padding: 15px 20px;
   text-decoration: none;
+  transition: 1s;
   width: 10%;
 }
 
