@@ -1,7 +1,24 @@
 footer {
+  align-items: center;
+  background-color: #a80000;
   border-radius: 5px 5px 0 0 ;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  background-color: #d32b2b;
   margin-top: 1vh;
+}
+
+footer > .contact-container {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 80vw;
+}
+
+.contact-container > h3 { margin: 5px 0; }
+
+.links-container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }

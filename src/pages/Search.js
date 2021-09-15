@@ -4,6 +4,9 @@ import '../styles/search.css';
 import { load } from '../helpers/consts';
 import Pokecard from '../components/Pokecard';
 
+import catchPokemon from '../img/catch-pokemon.gif';
+import sadPikachu from '../img/sad-pikachu.gif';
+
 import pokemonFound from '../sound_fx/pokemon_found.mp3';
 
 export default class Search extends Component {
@@ -41,7 +44,16 @@ export default class Search extends Component {
 
   renderContent = () => {
     const { landingMessage, pokemonJson } = this.state;
-    if (landingMessage) return <p>{ landingMessage }</p>;
+    if (landingMessage) return (
+      <>
+        <img
+          alt="gif"
+          className="feedback-gif"
+          src={ (landingMessage === 'Catch your Pokémon!!!') ? catchPokemon : sadPikachu }
+        />
+        <p>{ landingMessage }</p>
+      </>
+      );
     return <Pokecard pokeInfo={ pokemonJson } />;
   }
   

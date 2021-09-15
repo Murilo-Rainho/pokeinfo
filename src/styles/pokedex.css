@@ -12,6 +12,11 @@
   width: 80vw;
 }
 
+.loading-gif {
+  max-width: 600px;
+  width: 50vw;
+}
+
 .button-panel {
   display: flex;
   justify-content: space-around;
@@ -26,6 +31,7 @@
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
+  margin: 0 5px;
   min-height: 40px;
   padding: 10px 20px;
   width: 150px;
