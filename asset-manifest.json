@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pokemon-world/static/css/main.036bf725.chunk.css",
-    "main.js": "/pokemon-world/static/js/main.c6672a29.chunk.js",
-    "main.js.map": "/pokemon-world/static/js/main.c6672a29.chunk.js.map",
+    "main.js": "/pokemon-world/static/js/main.38dcabd7.chunk.js",
+    "main.js.map": "/pokemon-world/static/js/main.38dcabd7.chunk.js.map",
     "runtime-main.js": "/pokemon-world/static/js/runtime-main.0e21ed07.js",
     "runtime-main.js.map": "/pokemon-world/static/js/runtime-main.0e21ed07.js.map",
     "static/js/2.697c6e8d.chunk.js": "/pokemon-world/static/js/2.697c6e8d.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.0e21ed07.js",
     "static/js/2.697c6e8d.chunk.js",
     "static/css/main.036bf725.chunk.css",
-    "static/js/main.c6672a29.chunk.js"
+    "static/js/main.38dcabd7.chunk.js"
   ]
 }
