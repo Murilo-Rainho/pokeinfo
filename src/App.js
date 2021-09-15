@@ -12,7 +12,7 @@ import NoMatch from './pages/NoMatch';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename='/pokeinfo'>
+      <BrowserRouter basename='/pokemon-world'>
         <Header />
         <Switch>
           <Route exact path='/' component={ Home }/>
