@@ -4,6 +4,8 @@
 
 ![landingpage project](./src/img/background-pokeworld.png)
 
+### Made by Pair Progamming
+
 ---
 
 ### Educacional app powered by react, using some stacks like:
